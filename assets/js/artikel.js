@@ -1,0 +1,1 @@
+document.querySelectorAll('.toc-list a').forEach(function(l){l.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById(this.getAttribute('href').slice(1));if(!t)return;t.scrollIntoView({behavior: 'smooth', block: 'center'});})});
